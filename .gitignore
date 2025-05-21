@@ -1,0 +1,23 @@
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+*.ipynb_checkpoints
+.env
+*.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VSCode
+.vscode/
+
+# Dados e arquivos locais
+dados/*.xlsx
+dados/*.csv
+
+# Outros
+*.log
