@@ -1,31 +1,47 @@
-# 🎯 Análise Estatística da Lotofácil
+# 🎯 Projeto Lotofácil – Análise Estatística e Geração de Jogos
 
-## 📌 Objetivo
-Explorar os resultados históricos da Lotofácil para identificar padrões estatísticos relevantes e gerar combinações inteligentes de jogos com base em dados reais.
+Este projeto tem como objetivo realizar uma análise estatística completa da Lotofácil com base em todos os concursos disponíveis, e, a partir dessa análise, gerar jogos otimizados com maior probabilidade de acerto.
 
-## 🛠️ Ferramentas Utilizadas
-- Python (Pandas, Matplotlib, Seaborn, NumPy)
+## 📁 Estrutura
+
+- `data/`: Base de dados original (arquivo .xlsx da Lotofácil)
+- `notebooks/`: Jupyter notebooks com as análises e scripts
+- `outputs/`: Arquivos gerados, como gráficos e os 30 jogos finais
+- `README.md`: Este arquivo
+- `requirements.txt`: Bibliotecas utilizadas
+
+## 🧠 Etapas do Projeto
+
+1. **Análise Exploratória**: Frequência de dezenas, distribuição ímpar/par, soma, heatmaps, etc.
+2. **Fechamento com 18 dezenas**: Geração de 30 jogos com pelo menos 13 pontos garantidos se 15 estiverem entre as 18.
+3. **Verificação dos resultados**: Script que confere se os jogos gerados acertaram nos concursos seguintes.
+4. **Análise parametrizada**: Foco nos últimos `n` concursos, como os 100 mais recentes.
+
+## 📊 Exemplos de Análises
+
+- Frequência absoluta e relativa das dezenas
+- Heatmaps por linha e coluna do volante
+- Distribuição par/impar
+- Soma total das dezenas
+- Gráfico comparativo entre frequência histórica e dezenas do fechamento
+
+## 🛠️ Tecnologias
+
+- Python
+- Pandas
+- Matplotlib / Seaborn
 - Jupyter Notebook
-- Git + GitHub
-- VSCode
 
-## 📊 Etapas da Análise
-- Importação e limpeza dos dados da Lotofácil
-- Frequência das dezenas
-- Distribuição de somas dos jogos
-- Análise de pares e ímpares
-- Repetição de dezenas entre concursos
-- Análise por linhas e colunas do volante
-- Coocorrência entre dezenas
-- Geração de jogos estatísticos
+## 🚀 Como usar
 
-## ▶️ Como Executar
-1. Baixe o arquivo Excel da Lotofácil na pasta `dados/`
-2. Execute o notebook em `scripts/analise_lotofacil.ipynb`
-3. Os gráficos serão salvos na pasta `graficos/`
+1. Clone o repositório:
+git clone https://github.com/ccaio89/analise-lotofacil.git
 
-## 📎 Fonte dos Dados
-- [https://loterias.caixa.gov.br](https://loterias.caixa.gov.br)
+2. Instale os pacotes
+pip install -r requirements.txt
 
-## 🔒 Licença
-Este projeto está licenciado sob a [MIT License](LICENSE)
+3. Execute os notebooks na pasta `notebooks/`.
+
+## 📌 Autor
+
+Caio – Engenheiro de Dados | Estatístico  
